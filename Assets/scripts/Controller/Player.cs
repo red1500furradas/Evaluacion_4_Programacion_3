@@ -6,6 +6,16 @@ namespace RPG.Characters
 {
     public class Player : MonoBehaviour, IDamageable
     {
+        // evento?
+        /*
+        public delegate void OnWalkDelegate(bool isWalk);
+
+        public event OnWalkDelegate onWalk;
+        */
+
+        public delegate void OnTakeItemDelegate(string itemName);
+
+        public event OnTakeItemDelegate OntakeItem;
 
         public string playerName;
         public int energy;
@@ -159,10 +169,22 @@ namespace RPG.Characters
             {
                 damageable.RecibirDanio(10);
             }
+
+            if (other.gameObject.GetComponent<recogibleItem>() != null)
+            {
+                TakeNameItem(other.gameObject.GetComponent<recogibleItem>().nombreItem);
+            }
+        }
+
+        private void TakeNameItem(string itemName)
+        {
+            Debug.Log("El jugador recogio un item");
+
+            OntakeItem?.Invoke(itemName);
         }
     }
 
-
+    
     
 }
     
