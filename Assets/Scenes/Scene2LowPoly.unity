@@ -301,10 +301,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -5764374447937119047, guid: 185b4210b5e087149a29af23a02c1b60, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 51180522708bbfb469f3cc35c21ea8cc, type: 2}
+    - target: {fileID: -3189995823545189582, guid: 185b4210b5e087149a29af23a02c1b60, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4ed4a13ef71cc7a459321aaa7518ff8a, type: 2}
     - target: {fileID: 919132149155446097, guid: 185b4210b5e087149a29af23a02c1b60, type: 3}
       propertyPath: m_Name
       value: Magic_Wand
       objectReference: {fileID: 0}
+    - target: {fileID: 5088683670231867300, guid: 185b4210b5e087149a29af23a02c1b60, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e254657d037d84e4ba0c0292f3239552, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
